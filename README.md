@@ -34,7 +34,3 @@ Computer Engineer • Tech Analyst II • Power Platform • Databricks • Clou
 ## ⭐ Featured Projects
 
 (Patience, young Padawan)
-
-## 🌌 Star Wars Contribution Engine
-
-![Galactic Graph](https://raw.githubusercontent.com/LucasZaniSisti/LucasZaniSisti/main/output/starwars.svg)
