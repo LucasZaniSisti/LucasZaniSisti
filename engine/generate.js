@@ -24,8 +24,17 @@ Galactic Engine Online
 </svg>
 `;
 
-fs.mkdirSync("../output", { recursive: true });
 
-fs.writeFileSync("../output/starwars.svg", svg);
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const outputDir = path.join(__dirname, "..", "output");
+
+fs.mkdirSync(outputDir, { recursive: true });
+
+fs.writeFileSync(path.join(outputDir, "starwars.svg"), svg);
 
 console.log("SVG criado.");
