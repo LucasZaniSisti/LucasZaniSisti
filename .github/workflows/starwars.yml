@@ -1,16 +1,13 @@
-name: Star Wars Commit Art
+name: Star Wars Contribution Engine
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repo
@@ -21,14 +18,16 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Generate Star Wars commits
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate Star Wars SVG
         run: python scripts/generate.py
 
-      - name: Commit changes
+      - name: Commit SVG
         run: |
-          git config user.name "imperial-droid"
-          git config user.email "droid@empire.com"
-
-          git add .
-          git commit -m "🌌 imperial transmission" || exit 0
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add output/starwars.svg
+          git commit -m "🚀 update star wars graph" || exit 0
           git push
