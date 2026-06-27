@@ -3,22 +3,29 @@ name: Star Wars Commit Art
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"  # roda todo dia
+    - cron: "0 0 * * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Generate commits
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate Star Wars commits
+        run: python scripts/generate.py
+
+      - name: Commit changes
         run: |
           git config user.name "imperial-droid"
           git config user.email "droid@empire.com"
 
-          python scripts/generate.py
-
           git add .
-          git commit -m "🌌 imperial transmission" || echo "no changes"
+          git commit -m "🌌 imperial transmission" || exit 0
           git push
