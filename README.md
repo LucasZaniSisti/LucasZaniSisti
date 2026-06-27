@@ -16,3 +16,7 @@ Computer Engineer • Tech Analyst II • Power Platform • Databricks • Clou
 - ⚙️ Passionate about automation and infrastructure
 - 🌌 Star Wars enthusiast
 - 🎮 Old School RuneScape player
+
+## 🌌 Star Wars Contribution Engine
+
+![Galactic Graph](https://raw.githubusercontent.com/LucasZaniSisti/LucasZaniSisti/main/output/starwars.svg)
