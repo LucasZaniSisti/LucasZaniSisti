@@ -1,28 +1,39 @@
-from datetime import datetime, timedelta
 import os
+from datetime import datetime
 
-# padrão simples (você depois pode virar Darth Vader / logo Star Wars)
-pattern = [
-    "00100",
-    "01110",
-    "11111",
-    "10101",
-    "00100"
-]
+os.makedirs("output", exist_ok=True)
 
-start_date = datetime(2024, 1, 1)
+# MVP: grid fake estilo "galaxy radar"
+grid = []
 
-for y, row in enumerate(pattern):
-    for x, pixel in enumerate(row):
-        if pixel == "1":
-            day = start_date + timedelta(days=(y * 7 + x))
-            date_str = day.strftime("%Y-%m-%d")
+for y in range(10):
+    row = []
+    for x in range(52):
+        if (x + y + datetime.now().day) % 7 == 0:
+            row.append("🟦")  # vazio espacial
+        else:
+            row.append("🟩")  # "energia de commit"
+    grid.append("".join(row))
 
-            file_name = f"commits/{date_str}.txt"
-            os.makedirs("commits", exist_ok=True)
+svg_content = f"""
+<svg width="900" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="black"/>
 
-            with open(file_name, "w") as f:
-                f.write("STAR WARS COMMIT ART")
+  <text x="20" y="30" fill="lime" font-size="14">
+  STAR WARS CONTRIBUTION GRID - INITIALIZED
+  </text>
 
-            os.system(f'git add {file_name}')
-            os.system(f'git commit --date="{date_str}T12:00:00" -m "force commit"')
+  <text x="20" y="60" fill="white" font-size="10">
+  {chr(10).join(grid)}
+  </text>
+
+  <text x="20" y="180" fill="cyan" font-size="12">
+  May the Source be with you
+  </text>
+</svg>
+"""
+
+with open("output/starwars.svg", "w") as f:
+    f.write(svg_content)
+
+print("SVG generated")
