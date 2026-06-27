@@ -1,16 +1,36 @@
-## Hi there 👋
+# Hello there! 👋
 
-<!--
-**LucasZaniSisti/LucasZaniSisti** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## I'm Lucas Zani Sisti
 
-Here are some ideas to get you started:
+Computer Engineer • Tech Analyst II • Power Platform • Databricks • Cloud
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+> "May the Source be with you."
+
+---
+
+### 🚀 About Me
+
+- 💻 Tech Analyst II
+- 🎓 Computer Engineer
+- ☁️ Working with Power Platform & Databricks
+- ⚙️ Passionate about automation and infrastructure
+- 🌌 Star Wars enthusiast
+- 🎮 Old School RuneScape player
+
+---
+
+## 🛠 Tech Stack
+
+(Soon the badges will be here)
+
+---
+
+## 📈 GitHub Stats
+
+(Soon)
+
+---
+
+## ⭐ Featured Projects
+
+(Patience, young Padawan)
