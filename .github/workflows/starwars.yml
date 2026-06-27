@@ -1,0 +1,24 @@
+name: Star Wars Commit Art
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"  # roda todo dia
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate commits
+        run: |
+          git config user.name "imperial-droid"
+          git config user.email "droid@empire.com"
+
+          python scripts/generate.py
+
+          git add .
+          git commit -m "🌌 imperial transmission" || echo "no changes"
+          git push
