@@ -3,7 +3,10 @@ import { createSVG, save } from "./utils/svg.js";
 import { drawBackground } from "./draw/background.js";
 import { drawGrid } from "./draw/grid.js";
 import { drawStars } from "./draw/stars.js";
+
+
 import { drawXWing } from "./sprites/xwing.js";
+import { drawTie } from "./sprites/tie.js";
 
 const width = 951;
 const height = 169;
@@ -16,7 +19,9 @@ svg += drawStars();
 
 svg += drawGrid();
 
-drawXWing(120,80,45)
+drawXWing(120,80,45);
+svg += drawTie(760,80);
+
 save(svg);
 
 console.log("Engine OK");
