@@ -11,9 +11,9 @@ let svg = createSVG(width,height);
 
 svg += drawBackground();
 
-svg += drawGrid();
-
 svg += drawStars();
+
+svg += drawGrid();
 
 save(svg);
 
