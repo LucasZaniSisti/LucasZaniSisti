@@ -34,7 +34,7 @@ svg += drawStars();
 
 svg += drawGrid();
 
-svg += drawXWing(120,80,45);
+svg += drawXWing();
 svg += drawTie(760,80);
 
 save(svg);
