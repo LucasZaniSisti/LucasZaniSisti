@@ -11,7 +11,22 @@ import { drawTie } from "./sprites/tie.js";
 const width = 951;
 const height = 169;
 
-let svg = createSVG(width,height);
+let svg = createSVG(width, height);
+
+svg += `
+<defs>
+
+<path
+id="flightPath"
+d="
+M 80 120
+C 250 20,
+450 160,
+850 80
+"/>
+
+</defs>
+`;
 
 svg += drawBackground();
 
