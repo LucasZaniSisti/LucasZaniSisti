@@ -16,8 +16,7 @@ svg += drawStars();
 
 svg += drawGrid();
 
-svg += drawXWing(120, 80);
-
+drawXWing(120,80,45)
 save(svg);
 
 console.log("Engine OK");
