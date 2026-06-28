@@ -17,7 +17,4 @@
   <source media="(prefers-color-scheme: light)"
     srcset="https://raw.githubusercontent.com/LucasZaniSisti/LucasZaniSisti/xwing-output/xwing.svg">
 
-  <img src="https://raw.githubusercontent.com/LucasZaniSisti/LucasZaniSisti/xwing-output/xwing.svg">
-</picture>
-
-</p>
+ <img src="https://raw.githubusercontent.com/LucasZaniSisti/starwars-contribution-engine/output/starwars.svg">
