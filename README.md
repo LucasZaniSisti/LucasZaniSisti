@@ -9,12 +9,13 @@
 > "May the Source be with you."
 
 <p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/LucasZaniSisti/LucasZaniSisti/xwing-output/xwing-dark.svg">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/LucasZaniSisti/LucasZaniSisti/xwing-output/xwing-dark.svg">
+    <source media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/LucasZaniSisti/LucasZaniSisti/xwing-output/xwing.svg">
 
-  <source media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/LucasZaniSisti/LucasZaniSisti/xwing-output/xwing.svg">
-
- <img src="https://raw.githubusercontent.com/LucasZaniSisti/starwars-contribution-engine/output/starwars.svg">
+    <img src="https://raw.githubusercontent.com/LucasZaniSisti/starwars-contribution-engine/output/starwars.svg" />
+  </picture>
+</p>
