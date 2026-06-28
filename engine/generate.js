@@ -19,7 +19,7 @@ svg += drawStars();
 
 svg += drawGrid();
 
-drawXWing(120,80,45);
+svg += drawXWing(120,80,45);
 svg += drawTie(760,80);
 
 save(svg);
