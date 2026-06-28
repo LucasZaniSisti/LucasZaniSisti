@@ -9,5 +9,5 @@
 > "May the Source be with you."
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/LucasZaniSisti/starwars-contribution-engine/main/output/starwars.svg" width="1000"/>
+  <img src="https://raw.githubusercontent.com/LucasZaniSisti/starwars-contribution-engine/output/starwars.svg" width="1000"/>
 </p>
